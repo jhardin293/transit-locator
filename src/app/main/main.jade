@@ -1,0 +1,20 @@
+md-toolbar.tool-bar
+	.logo
+		h2 Transit Locator 
+.container(layout)
+	.sidebar(flex="35")
+		.search-places
+			input(ng-model="chosenPlace", id="search", search)
+			button(ng-click="goToPlace()")
+				| Go
+		.instructions
+			h4 Search for city or address to find transit stops.
+			h4 See Realtime  bus location for major cities like San Fransisco , New York, and Chicago.  
+		.places
+			.place-container(ng-repeat="place in markers track by $index", ng-mouseover="goToLocation($index)", 
+			ng-mouseout="exitLocation($index)", ng-click="openStreetView(place.location)")
+				.place-img(ng-style="{'background':'url(' + place.image + ') no-repeat center '}")
+				.place-text
+					h4 {{ place.name }}
+					p  {{ place.vicinity }}
+	div#map(flex)

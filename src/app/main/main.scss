@@ -1,0 +1,109 @@
+.full-height {
+	height: 100vh;
+}
+
+.container {
+	height: 100%;
+}
+.sidebar {
+	min-width: 440px;
+	background-color: #eef3f5;
+	overflow: scroll;
+}
+#map {
+	height: 100%;
+}
+
+.instructions {
+	font-size: 80%;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+  h4 {
+  	margin: 0;
+  	margin-bottom: 5px;
+  }
+}
+.tool-bar{
+	background-color: rgb(51, 63, 79) !important;
+	.logo{
+		h2 {
+			text-transform: uppercase;
+      font-weight: 200;
+      margin: 12px;
+      letter-spacing: 2px;
+      padding-left: 8px;
+
+		}
+	}
+}
+
+.search-places {
+  width:365px;
+	overflow: hidden;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin: 15px;
+  margin-top: 24px;
+
+  input {
+  	width: 350px;
+	  height: 35px;
+	  border: 2px solid #333F4F;
+  	float: left;
+  	padding-left: 10px;
+  }
+
+  button {
+	  border: none;
+	  background: #232833;
+	  height: 40px;
+	  width: 50px;
+	  color: #4f5b66;
+	  margin-left: -51px;
+	  opacity: 1;
+	  color: white;
+  }
+}
+
+.place-container {
+  border-radius: 4px;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 15px;
+  &:hover{
+  	cursor: pointer;
+  }
+
+  .place-img {
+    background-size: 100% auto;
+    display: block;
+    height: 0;
+    padding-top: 50%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .place-text {
+    padding-top: 18px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    background-color: white;
+    border-bottom: 9px solid #dce8ec;
+    height: 45px;
+
+    h4,p{
+    	margin: 0;
+    }
+
+    h4{
+    	font-size: 93%;
+    	margin-bottom: 5px;
+    }
+
+    p{
+    	font-size: 83%;
+    }
+  }
+}
